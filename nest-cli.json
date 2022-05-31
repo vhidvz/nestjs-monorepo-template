@@ -1,0 +1,46 @@
+{
+  "monorepo": true,
+  "root": "apps/public",
+  "sourceRoot": "apps/public/src",
+  "compilerOptions": {
+    "tsConfigPath": "apps/public/tsconfig.app.json"
+  },
+  "projects": {
+    "admin": {
+      "type": "application",
+      "root": "apps/admin",
+      "entryFile": "main",
+      "sourceRoot": "apps/admin/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/admin/tsconfig.app.json"
+      }
+    },
+    "public": {
+      "type": "application",
+      "root": "apps/public",
+      "entryFile": "main",
+      "sourceRoot": "apps/public/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/public/tsconfig.app.json"
+      }
+    },
+    "authentication": {
+      "type": "library",
+      "root": "libs/authentication",
+      "entryFile": "index",
+      "sourceRoot": "libs/authentication/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/authentication/tsconfig.lib.json"
+      }
+    },
+    "authorization": {
+      "type": "library",
+      "root": "libs/authorization",
+      "entryFile": "index",
+      "sourceRoot": "libs/authorization/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/authorization/tsconfig.lib.json"
+      }
+    }
+  }
+}
